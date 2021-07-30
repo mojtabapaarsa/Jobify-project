@@ -1,11 +1,13 @@
 @import url(../assets/fonts/fontiran.css);
 #header {
+  background-color: #1967D2;
   background: url("../images/bg-header.jfif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  min-width: 100vw;
   width: 100%;
-  height: 120vh;
+  height: 100vh;
 }
 
 #header #navbar {
@@ -230,6 +232,207 @@
   }
 }
 
+.joblists {
+  margin: 0 auto;
+}
+
+.joblists .nav-pills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.joblists .nav-pills .nav-item {
+  margin: 0 9px;
+  background-color: #f0f5f7;
+  border-radius: 7px;
+}
+
+.joblists .job-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 25px;
+  margin: 20px 0 0;
+  border: 1px solid #ECEDF2;
+  border-radius: 10px;
+  position: relative;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.joblists .job-item .job-logo {
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+}
+
+.joblists .job-item .job-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.joblists .job-item .job-content .job-title {
+  text-align: right;
+}
+
+.joblists .job-item .job-content .job-title a:hover {
+  color: #1967D2;
+}
+
+.joblists .job-item .job-content .job-title span {
+  font-size: 13px;
+  font-weight: 500;
+  color: #34A853;
+  padding: 1px 8px;
+  border-radius: 17px;
+  margin-right: 10px;
+}
+
+.joblists .job-item .job-content .save-job {
+  position: absolute;
+  left: 20px;
+  top: 19px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #696969;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.joblists .job-item .job-content .job-details {
+  text-align: right;
+  margin: 11px 0;
+}
+
+.joblists .job-item .job-content .job-details span {
+  font-size: 13px;
+  color: #696969;
+  margin-left: 20px;
+}
+
+.joblists .job-item .job-content .job-details span:hover {
+  color: #535353;
+}
+
+.joblists .job-item .job-content .job-details span svg {
+  margin-left: 3px;
+  vertical-align: -3px;
+}
+
+.joblists .job-item:hover {
+  -webkit-box-shadow: 0px 6px 15px 0 rgba(64, 79, 104, 0.062);
+          box-shadow: 0px 6px 15px 0 rgba(64, 79, 104, 0.062);
+}
+
+.joblists .job-item:hover .save-job {
+  color: #696969;
+  background-color: #ecedf1;
+  cursor: pointer;
+}
+
+.joblists .show-all {
+  margin: 20px 0;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  color: #696969;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.joblists .show-all svg {
+  margin: 4px 10px 0 0;
+  -webkit-transition: margin .3s ease;
+  transition: margin .3s ease;
+}
+
+.joblists .show-all:hover {
+  color: #1967D2;
+}
+
+.joblists .show-all:hover svg {
+  margin: 4px 10px 0 -3px;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1967D2;
+}
+
+@media screen and (max-width: 568px) {
+  .show-all {
+    margin: 20px 0;
+    display: block !important;
+    text-align: center;
+    color: #696969;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    font-size: 14px;
+  }
+  .show-all svg {
+    margin: 4px 10px 0 0;
+  }
+  .show-all:hover {
+    color: #1967D2;
+  }
+}
+
+.cv-section {
+  margin: 50px 0 0;
+  width: 100%;
+  height: 300px;
+  background: url("../images/bg_shape.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.cv-section .section-title {
+  color: #fff !important;
+}
+
+.cv-section .section-title h3, .cv-section .section-title span {
+  color: #fff;
+}
+
+.cv-section .cv-btn {
+  margin: 0 auto;
+  background-color: #F9AB00;
+  color: #fff;
+  text-align: center;
+  padding: 9px 19px;
+  border: 1px solid transparent;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.cv-section .cv-btn:hover {
+  background-color: transparent;
+  border: 1px solid #F9AB00;
+}
+
 @font-face {
   font-family: IRANSans;
   font-style: normal;
@@ -278,7 +481,7 @@
   src: url("../fonts/eot/IRANSansWeb(FaNum).eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/IRANSansWeb(FaNum).woff2") format("woff2"), url("../fonts/woff/IRANSansWeb(FaNum).woff") format("woff"), url("../fonts/ttf/IRANSansWeb(FaNum).ttf") format("truetype");
 }
 
-a {
+a, a:hover {
   text-decoration: none;
   color: #202124;
 }
@@ -295,5 +498,22 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
+}
+
+.section-title {
+  margin: 50px auto;
+  text-align: center;
+}
+
+.section-title h3 {
+  text-align: center;
+  font-weight: 700;
+  color: #202124;
+  margin-bottom: 14px;
+}
+
+.section-title span {
+  color: #77837f;
+  font-size: 14px;
 }
 /*# sourceMappingURL=style.css.map */

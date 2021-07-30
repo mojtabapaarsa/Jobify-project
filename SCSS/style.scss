@@ -1,5 +1,7 @@
 @import 'variables';
 @import 'header';
+@import 'joblists';
+@import 'cv-sec';
 @import url(../assets/fonts/fontiran.css);
 
 @font-face {
@@ -66,7 +68,7 @@
 //  ----------------------------
 
  
-a{
+a , a:hover{
     text-decoration: none;
     color: $link-color;
 }
@@ -84,3 +86,18 @@ body{
      margin: 0;
      overflow-x: hidden;
 }
+.section-title{
+	margin: 50px auto ;
+	text-align: center;
+	h3{
+		text-align: center;
+		font-weight: 700;
+		color: #202124;
+		margin-bottom: 14px;
+	}
+	span{
+		color: #77837f;
+		font-size: 14px;
+	}
+}
+
