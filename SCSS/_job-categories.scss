@@ -1,0 +1,59 @@
+.job-categories-container{
+
+    .job-categories{
+        .job-category-item{
+            background-color: #fff;
+            border: 1px solid #ECEDF2;
+            border-radius: 10px;
+            display: flex;
+            padding: 20px;
+            margin-bottom: 27px;
+            cursor: pointer;
+            transition: all .3s linear;
+            .category-icon{
+                width: 70px;
+                height: 70px;
+                border-radius: 7px;
+                background-color: #ECEDF2;
+                color: $main-color;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 10px;
+                transition: all .3s linear;
+                svg , img{
+                    font-size: 35px;
+                    width: 50px;
+                    height: auto;
+                    fill: $main-color;
+                }
+            }
+            .job-category-inner{
+                margin-top: 8px;
+                .job-category-title{
+                    font-size: 18px;
+                    font-weight: 500;
+                    
+                    a{
+                        transition: color .3s linear;
+                    }
+                }
+                .job-category-number{
+                    font-size: 13px;
+                    color: #696969;
+                }
+            }
+
+            &:hover{
+                box-shadow: 0px 6px 15px 0 rgba(64, 79, 104, 0.062);
+            }
+            &:hover .category-icon{
+                background-color: $main-color;
+                color: #fff;
+            }
+            &:hover .job-category-title a{
+                color: $main-color !important;
+            }
+        }
+    }
+}

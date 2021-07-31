@@ -433,6 +433,80 @@
   border: 1px solid #F9AB00;
 }
 
+.job-categories-container .job-categories .job-category-item {
+  background-color: #fff;
+  border: 1px solid #ECEDF2;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  margin-bottom: 27px;
+  cursor: pointer;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.job-categories-container .job-categories .job-category-item .category-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 7px;
+  background-color: #ECEDF2;
+  color: #1967D2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 10px;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.job-categories-container .job-categories .job-category-item .category-icon svg, .job-categories-container .job-categories .job-category-item .category-icon img {
+  font-size: 35px;
+  width: 50px;
+  height: auto;
+  fill: #1967D2;
+}
+
+.job-categories-container .job-categories .job-category-item .job-category-inner {
+  margin-top: 8px;
+}
+
+.job-categories-container .job-categories .job-category-item .job-category-inner .job-category-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.job-categories-container .job-categories .job-category-item .job-category-inner .job-category-title a {
+  -webkit-transition: color .3s linear;
+  transition: color .3s linear;
+}
+
+.job-categories-container .job-categories .job-category-item .job-category-inner .job-category-number {
+  font-size: 13px;
+  color: #696969;
+}
+
+.job-categories-container .job-categories .job-category-item:hover {
+  -webkit-box-shadow: 0px 6px 15px 0 rgba(64, 79, 104, 0.062);
+          box-shadow: 0px 6px 15px 0 rgba(64, 79, 104, 0.062);
+}
+
+.job-categories-container .job-categories .job-category-item:hover .category-icon {
+  background-color: #1967D2;
+  color: #fff;
+}
+
+.job-categories-container .job-categories .job-category-item:hover .job-category-title a {
+  color: #1967D2 !important;
+}
+
 @font-face {
   font-family: IRANSans;
   font-style: normal;
