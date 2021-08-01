@@ -10,3 +10,9 @@ $gray-color:#ECEDF2;
 $green-color:#34A853;
 $link-color:#202124;
 $footer-color:#2F333C;
+
+@mixin flex-center {
+display: flex;
+justify-content: center;
+align-items: center;
+}

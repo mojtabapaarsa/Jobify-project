@@ -1,0 +1,108 @@
+.customer-comments-container{
+    margin: 70px 0 50px;
+    width: 100%;
+    min-height: 550px;
+    background: url('../images/h94.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .section-title{
+        h3 , span{
+            color: #fff;
+        }
+    }
+
+    .comments-items{
+        margin: 0 auto;
+         
+        .comment-item{
+            background-color: #fff;
+            width: 100%;
+            padding: 30px 40px;
+            border-radius: 8px;
+
+            .comment-item-text{
+                h6{
+                    margin-bottom: 20px;
+                    color: $main-color;
+                    font-weight: 700;
+                }
+                p{
+                    text-align: justify;
+                    line-height: 2;
+                    font-size: 15px;
+                    color: #696969;
+                }
+                
+            }
+            .comment-item-person{
+                margin-top: 30px;
+                display: flex;
+                .comment-item-person-img{
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    margin-left: 10px;
+                }
+                .comment-item-person-name{
+                    margin-top: 5px;
+                    h6{
+                        color: #202124;
+                        margin-bottom: 4px;
+                    }
+                    span{
+                        color: #77837f;
+                        font-size: 13px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+
+    .owl-carousel .owl-stage-outer {
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+    .owl-theme .owl-nav {
+        display: none;
+    }
+
+    .owl-theme .owl-dots, .owl-theme .owl-nav{
+        padding: 30px 0;
+
+        .owl-theme .owl-dots .owl-dot {
+            display: inline-block;
+            zoom: 1;
+            
+
+           
+        }
+   
+    }
+    .owl-theme .owl-dots .owl-dot span {
+        width: 10px;
+        height: 10px;
+        margin: 5px 7px;
+      
+        display: block;
+       
+        transition: all .3s ease;
+        border-radius: 30px;
+    }
+    .owl-theme .owl-dots .owl-dot.active span{
+        background-color: #fff;
+        width: 25px;
+        height: 10px;
+    }
+    
+}
+
+@media screen and (max-width:565px) {
+    .customer-comments-container{
+        padding: 20px;
+    }
+}
