@@ -1,5 +1,5 @@
 .customer-comments-container{
-    margin: 70px 0 50px;
+    margin: 75px 0 50px;
     width: 100%;
     min-height: 550px;
     background: url('../images/h94.jpg');
@@ -21,7 +21,15 @@
             width: 100%;
             padding: 30px 40px;
             border-radius: 8px;
-
+            position: relative;
+            &::before{
+                content: '\275d';
+                position: absolute;
+                color: #ECEDF2;
+                font-size: 65px;
+                left: 20px;
+                top: 10px;
+            }
             .comment-item-text{
                 h6{
                     margin-bottom: 20px;

@@ -1,0 +1,17 @@
+.stats-container{
+    background-color: #fff;
+    margin-bottom: 20px;
+
+    .stats-items{
+        text-align: center;
+
+        .stats-counter{
+            font-size: 50px;
+            color: $main-color;
+            font-weight: 700;
+        }
+        span{
+            color: #696969;
+        }
+    }
+}

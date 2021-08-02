@@ -27,6 +27,7 @@ $('.owl-carousel').owlCarousel({
     rtl:true,
     nav:true,
     autoplay:true,
+    animateOut: 'fadeOut',
     responsive:{
         0:{
             items:1
