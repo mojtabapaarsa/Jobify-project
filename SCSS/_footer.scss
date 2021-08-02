@@ -1,0 +1,113 @@
+footer{
+    background-color: $footer-color;
+    color: #fff;
+    padding: 70px  0 10px;
+
+    .footer-details{
+       
+
+        p{
+            line-height: 2;
+            text-align: justify;
+            background-color: #4d515a79;
+            padding: 10px;
+            border-radius: 8px;
+        }
+         
+    }
+    .footer-title{
+        margin-bottom: 20px;
+    }
+    .footer-links{
+        .footer-link{
+            margin-bottom: 15px;
+
+            a{
+                color: #fff;
+                font-weight: 400;
+                font-size: 14px;
+                transition: all .3s ease;
+                &:hover{
+                   margin-right: 10px;
+                }
+            }
+        }
+    }
+    .footer-form{
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 9px;
+        input{
+            padding: 21px 20px;
+            position: relative;
+            border: none;
+            outline: none;
+            box-shadow: none;
+            font-size: 13px;
+
+            &:focus , &:hover , &:active{
+                outline: none;
+                box-shadow: none;
+            }
+        }
+        button{
+            position: absolute;
+            background-color: $main-color;
+            right: 25px;
+            top: 51px;
+            padding: 7px 10px;
+            border-radius: 8px;
+            border: none;
+            color: #fff;
+            border: 1px solid transparent;
+            transition: all .2s linear;
+            &:hover{
+                background-color: #fff;
+                border-color: $main-color;
+                color: $main-color;
+            }
+        }
+    }
+    .footer-sec-2{
+       margin: 20px 0 0;
+        border-top: 1px solid #FFFFFF1A;
+        padding-top: 30px;
+        .copyright{
+           
+            
+            strong{
+                color: red;
+                font-size: 23px;
+                vertical-align: -3px;
+                margin: 0 3px;
+            }
+        }
+
+        .social-links{
+            display: flex;
+            justify-content: flex-end;
+            align-items: baseline;
+            .social-link{
+                margin-right: 30px;
+                &:first-child{
+                    margin-right: 0;
+                }
+                a{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:568px) {
+    .footer-sec-2{
+        text-align: center;
+        margin: 0 auto;
+        
+        .social-links{
+            display: flex;
+            justify-content: center !important;
+        }
+    }
+
+}
