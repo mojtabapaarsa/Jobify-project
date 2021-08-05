@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>جابیفای - مشاغل</title>
+
+    <link rel="stylesheet" href="assets/css//min/all.min.css" />
+    <link rel="stylesheet" href="assets/css//min/bootstrap-rtl.min.css" />
+    <link rel="stylesheet" href="assets/css//min/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css//min/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <!------------------- Start Header Section ---------------- -->
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="second-navbar navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#"
+            ><img src="assets/images/logo-blue.png" alt=""
+          /></a>
+          <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link custom-nav-link active" href="#"
+              >صفحه نخست
+            </a>
+            <a class="nav-link custom-nav-link" href="#"
+              >جستجوی شغل</a
+            >
+            <a class="nav-link custom-nav-link" href="#"
+              >کارفرما ها</a
+            >
+            <a class="nav-link custom-nav-link" href="#">بلاگ</a>
+            <a class="nav-link custom-nav-link" href="#">درباره ما</a>
+            <a class="nav-link custom-nav-link" href="#"
+              >ارتباط با ما</a
+            >
+          </div>
+        </div>
+        <form class="form-inline d-none d-lg-block">
+          <button class="btn add-job-btn" type="button">
+            درخواست کار
+          </button>
+          <button class="btn btn-outline-primary mr-2 sign-in-btn" type="button" data-toggle="modal" data-target="#signin-modal">
+            ورود / عضویت
+          </button>
+
+          
+        </form>
+        </nav>
+
+        <nav class="navbar secong-nav-mob mobile-nav d-flex justify-content-between">
+            <div>
+              <a href="#" class="mr-2" type="button" data-toggle="modal" data-target="#signin-modal"><i class="far fa-user"></i></a>
+              <a href="#" class="sidebar-icon"><i class="fas fa-bars"></i></a>
+            </div>
+
+            <a href="#"
+              ><img
+                src="assets/images/logo-blue.png"
+                class="mobile-nav-brand"
+                alt=""
+            /></a>
+          </nav>
+
+
+             <!-- Start Navbar  -->
+             <!-- <div class="container">
+                <div class="row">
+                  <div class="col-12 p-0">
+                    <nav class="navbar navbar-expand-lg" id="navbar-sec">
+                      <a class="navbar-brand" href="#"
+                        ><img src="assets/images/logo-white.png" alt=""
+                      /></a>
+                      <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                      >
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                          <a class="nav-link custom-nav-link active" href="#"
+                            >صفحه نخست
+                          </a>
+                          <a class="nav-link custom-nav-link" href="#"
+                            >جستجوی شغل</a
+                          >
+                          <a class="nav-link custom-nav-link" href="#"
+                            >کارفرما ها</a
+                          >
+                          <a class="nav-link custom-nav-link" href="#">بلاگ</a>
+                          <a class="nav-link custom-nav-link" href="#">درباره ما</a>
+                          <a class="nav-link custom-nav-link" href="#"
+                            >ارتباط با ما</a
+                          >
+                        </div>
+                      </div>
+                      <form class="form-inline d-none d-lg-block">
+                        <button class="btn add-job-btn" type="button">
+                          درخواست کار
+                        </button>
+                        <button class="btn btn-outline-light mr-2" type="button" data-toggle="modal" data-target="#signin-modal">
+                          ورود / عضویت
+                        </button>
+    
+                        
+                      </form>
+                    </nav>
+                  </div>
+                </div>
+              </div> -->
+              <!-- End Navbar  -->
+              
+        <header id="header" class="second-page-header">
+       
+
+
+          <!-- ----- Signin Modal -->
+
+          <!-- Button trigger modal -->
+ 
+
+<!-- Modal -->
+<div class="modal sign-in-modal fade" id="signin-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content sign-in-modal-content">
+      <div class="modal-header sign-in-modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">ورود به جابیفای</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body sign-in-modal-body">
+        
+        <!-- SIGN IN FORM -->
+        <form class="modal-form">
+          <div class="form-group">
+            <label for="modal-sign-in-email">نام کاربری یا ایمیل</label>
+            <input type="email" class="form-control" placeholder="نام کاربری یا ایمیل" id="modal-sign-in-email" aria-describedby="emailHelp">
+          </div>
+          <div class="form-group">
+            <label for="modal-sign-in-password">رمز عبور</label>
+            <input type="password" class="form-control" placeholder="رمز عبور" id="modal-sign-in-password">
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="modal-sign-in-check">
+            <label class="form-check-label" for="modal-sign-in-check">من را به خاطر بسپار</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block sign-in-modal-btn">وورد به حساب</button>
+          <a href="#" class="ask-register">عضو نیستی؟ <strong>ایجاد حساب کاربری</strong></a>
+        </form>
+
+        <!-- SIGN IN FORM ENd -->
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+          <!-- ----- Signin Modal ENd -->
+
+          <!-- MobileNavbar -->
+          
+          <div class="row">
+            <div class="col-12">
+            
+            </div>
+          </div>
+        </header>
+      </div>
+    </div>
+    <!-- ----------------- End Header Section ------------------ -->
+
+    <!------------------ Side Menu Section ----------------- -->
+    <div class="side-menu">
+      <div class="side-menu-header">
+        <img src="assets/images/logo-blue.png" alt="">
+      </div>
+      
+      <div class="side-nav-content">
+        <div class="navbar-nav">
+          <a class="nav-link side-nav-link active" href="#"
+            >صفحه نخست
+          </a>
+          <a class="nav-link side-nav-link" href="#"
+            >جستجوی شغل</a
+          >
+          <a class="nav-link side-nav-link" href="#"
+            >کارفرما ها</a
+          >
+          <a class="nav-link side-nav-link" href="#">بلاگ</a>
+          <a class="nav-link side-nav-link" href="#">درباره ما</a>
+          <a class="nav-link side-nav-link" href="#"
+            >ارتباط با ما</a
+          >
+        </div>
+        <button class="btn btn-primary btn-block mt-3" type="button">ورود / عضویت</button>
+
+        <div class="side-menu-social">
+          <ul class="social-links text-center">
+            <li class="social-link"><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+            <li class="social-link"><a href="#"><i class="fab fa-facebook-square" aria-hidden="true"></i></a></li>
+            <li class="social-link"><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+            <li class="social-link"><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Start form search  -->
+    <div class="container-fluid form-search-container">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <form class="form-serch form-inline">
+                      <div class="col-12 col-md-4 pl-0">
+                        <div
+                          class="
+                            d-flex
+                            justify-content-center
+                            align-items-center
+                            form-border-left
+                          "
+                        >
+                          <i class="fas fa-search"></i>
+                          <input
+                            type="text"
+                            placeholder="عنوان شغلی ، مهارت یا ..."
+                            class="form-control search-input"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-3">
+                        <div
+                          class="
+                            d-flex
+                            justify-content-center
+                            align-items-center
+                            form-border-left
+                          "
+                        >
+                          <i class="fas fa-map-marker-alt"></i>
+                          <select
+                            name=""
+                            id=""
+                            class="custom-select w-100 search-input border-0"
+                          >
+                            <div class="options border-danger">
+                              <option selected>همه‌ی استان‌ها</option>
+                              <option value="tehran">تهران</option>
+                              <option value="esfahan">اصفهان</option>
+                              <option value="fars">فارس</option>
+                              >
+                              <option value="khuzestan">خوزستان</option>
+                            </div>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-3">
+                        <div
+                          class="
+                            d-flex
+                            justify-content-center
+                            align-items-center
+                          "
+                        >
+                          <i class="fas fa-briefcase"></i>
+                          <select
+                            name=""
+                            id=""
+                            class="
+                              custom-select
+                              find-select
+                              w-100
+                              search-input
+                              border-0
+                            "
+                          >
+                            <option selected>همه‌ی دسته‌بندی‌ها</option>
+                            <option value="programming">
+                              وب، برنامه نویسی و نرم افزار
+                            </option>
+                            <option value="marketing">
+                              فروش و بازاریابی
+                            </option>
+                            <option value="product">تولید محتوا</option>
+                            >
+                            <option value="finance">مالی و حسابداری</option>
+                            >
+                          </select>
+                        </div>
+                      </div>
+                      <button class="btn form-btn mr-auto ml-auto">
+                        جستجوی شغل
+                      </button>
+                    </form>
+                  </div>
+                </div>
+                
+              </div>
+        </div>
+    </div>
+    <!-- End form search  -->
+
+    <!------------------- Start Job Lists ---------------------- -->
+        <div class="container job-list-container">
+            <div class="row m-0">
+                <div class="col-12 col-md-4">
+                    <div class="job-filter">
+                        <div class="job-filter-item">
+                            <h5 class="job-filter-item-title">نوع شغل</h5>
+
+                            <div class="form-check job-filter-form-check">
+                                <input class="form-check-input job-filter-form-check-input" type="radio" name="exampleRadios" id="freelance-radio" value="option1" >
+                                <label class="form-check-label" for="freelance-radio">
+                                  فریلنس
+                                </label>
+                              </div>
+                              <div class="form-check job-filter-form-check">
+                                <input class="form-check-input job-filter-form-check-input" type="radio" name="exampleRadios" id="fulltime-radio" value="option2">
+                                <label class="form-check-label" for="fulltime-radio">
+                                  تمام وقت
+                                </label>
+                              </div>
+                              <div class="form-check job-filter-form-check">
+                                <input class="form-check-input job-filter-form-check-input" type="radio" name="exampleRadios" id="parttime-radio" value="option3" >
+                                <label class="form-check-label" for="parttime-radio">
+                                  پاره وقت
+                                </label>
+                              </div>
+
+                              <div class="form-check job-filter-form-check">
+                                <input class="form-check-input job-filter-form-check-input" type="radio" name="exampleRadios" id="remote-radio" value="option3" >
+                                <label class="form-check-label" for="remote-radio">
+                                 دورکاری
+                                </label>
+                              </div>
+
+                             
+                        </div>
+
+                        <div class="job-filter-item">
+                            <h5 class="job-filter-item-title">حقوق</h5>
+
+                            میزان حقوق
+
+                             
+                        </div>
+
+                        <div class="job-filter-item">
+                            <h5 class="job-filter-item-title">سابقه ی کار</h5>
+
+                            میزان حقوق
+
+                             
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-8  p-0">
+                    <div class="job-items">
+                        <div class="col-12">
+                            <div class="job-item">
+                              <div class="job-logo">
+                                <img src="assets/images/job-logo-2.jpg" alt="" />
+                              </div>
+                              <div class="job-content">
+                                <h6 class="job-title">
+                                  <a href="#">کارشناس دیجیتال مارکتینگ</a>
+                                  <span>تمام وقت</span>
+                                </h6>
+                                <a href="#" class="save-job"
+                                  ><i class="far fa-bookmark"></i
+                                ></a>
+                                <div class="job-details">
+                                  <span
+                                    ><i class="fas fa-briefcase"></i>
+                                    <a href="#">دیجیتال مارکتینگ</a></span
+                                  >
+                                  <span
+                                    ><i class="fas fa-map-marker-alt"></i>
+                                    <a href="#">اصفهان</a></span
+                                  >
+                                  <span
+                                    ><i class="fas fa-wallet"></i>
+                                    <a href="#">حقوق 4 میلیون تومان</a></span
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-12 ">
+                            <div class="job-item">
+                              <div class="job-logo">
+                                <img src="assets/images/job-logo-3.jpg" alt="" />
+                              </div>
+                              <div class="job-content">
+                                <h6 class="job-title">
+                                  <a href="#">برنامه نویس ارشد اندروید</a>
+                                  <span>دورکاری</span>
+                                </h6>
+                                <a href="#" class="save-job"
+                                  ><i class="far fa-bookmark"></i
+                                ></a>
+                                <div class="job-details">
+                                  <span
+                                    ><i class="fas fa-briefcase"></i>
+                                    <a href="#">برنامه نویسی</a></span
+                                  >
+                                  <span
+                                    ><i class="fas fa-map-marker-alt"></i>
+                                    <a href="#">شیراز</a></span
+                                  >
+                                  <span
+                                    ><i class="fas fa-wallet"></i>
+                                    <a href="#">حقوق 6 میلیون تومان</a></span
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+    
+                          <div class="col-12">
+                            <div class="job-item">
+                              <div class="job-logo">
+                                <img src="assets/images/job-logo-4.jpg" alt="" />
+                              </div>
+                              <div class="job-content">
+                                <h6 class="job-title">
+                                  <a href="#">کارآموز بک اند جنگو</a>
+                                  <span>کارآموزی</span>
+                                </h6>
+                                <a href="#" class="save-job"
+                                  ><i class="far fa-bookmark"></i
+                                ></a>
+                                <div class="job-details">
+                                  <span
+                                    ><i class="fas fa-briefcase"></i>
+                                    <a href="#">برنامه نویسی</a></span
+                                  >
+                                  <span
+                                    ><i class="fas fa-map-marker-alt"></i>
+                                    <a href="#">تهران</a></span
+                                  >
+                                  <span
+                                    ><i class="fas fa-wallet"></i>
+                                    <a href="#"> حقوق توافقی</a></span
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-12">
+                            <div class="job-item">
+                              <div class="job-logo">
+                                <img src="assets/images/job-logo-4.jpg" alt="" />
+                              </div>
+                              <div class="job-content">
+                                <h6 class="job-title">
+                                  <a href="#">کارآموز بک اند جنگو</a>
+                                  <span>کارآموزی</span>
+                                </h6>
+                                <a href="#" class="save-job"
+                                  ><i class="far fa-bookmark"></i
+                                ></a>
+                                <div class="job-details">
+                                  <span
+                                    ><i class="fas fa-briefcase"></i>
+                                    <a href="#">برنامه نویسی</a></span
+                                  >
+                                  <span
+                                    ><i class="fas fa-map-marker-alt"></i>
+                                    <a href="#">تهران</a></span
+                                  >
+                                  <span
+                                    ><i class="fas fa-wallet"></i>
+                                    <a href="#"> حقوق توافقی</a></span
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-12">
+                            <div class="job-item">
+                              <div class="job-logo">
+                                <img src="assets/images/job-logo-4.jpg" alt="" />
+                              </div>
+                              <div class="job-content">
+                                <h6 class="job-title">
+                                  <a href="#">کارآموز بک اند جنگو</a>
+                                  <span>کارآموزی</span>
+                                </h6>
+                                <a href="#" class="save-job"
+                                  ><i class="far fa-bookmark"></i
+                                ></a>
+                                <div class="job-details">
+                                  <span
+                                    ><i class="fas fa-briefcase"></i>
+                                    <a href="#">برنامه نویسی</a></span
+                                  >
+                                  <span
+                                    ><i class="fas fa-map-marker-alt"></i>
+                                    <a href="#">تهران</a></span
+                                  >
+                                  <span
+                                    ><i class="fas fa-wallet"></i>
+                                    <a href="#"> حقوق توافقی</a></span
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                    </div>
+                
+                </div>
+ 
+            </div>
+        </div>
+    <!------------------- End Job Lists ---------------------- -->
+
+    <!-- Start Job Lists -->
+   
+   
+    
+    
+     <!-- Start Footer Section -->
+     <footer>
+       <div class="container">
+         <div class="row">
+           <div class="col-12 col-md-5">
+             
+              <div class="footer-details">
+                 <p>
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+                 </p>
+              </div>
+              <div class="footer-logo mt-4">
+                <img src="assets/images/logo-white.png" alt="">
+              </div>
+
+           </div>
+           <div class="col-6 col-md-2">
+             <h6 class="footer-title">عنوان فوتر</h6>
+             <ul class="footer-links">
+               <li class="footer-link"><a href="#">لینک اول</a></li>
+               <li class="footer-link"><a href="#">لینک اول</a></li>
+               <li class="footer-link"><a href="#">لینک اول</a></li>
+               <li class="footer-link"><a href="#">لینک اول</a></li>
+           
+               
+             </ul>
+           </div>
+           <div class="col-6 col-md-2">
+            <h6 class="footer-title">عنوان فوتر</h6>
+            <ul class="footer-links">
+              <li class="footer-link"><a href="#">لینک اول</a></li>
+              <li class="footer-link"><a href="#">لینک اول</a></li>
+              <li class="footer-link"><a href="#">لینک اول</a></li>
+              <li class="footer-link"><a href="#">لینک اول</a></li>
+          
+              
+            </ul>
+          </div>
+           <div class="col-12 col-md-3">
+            <h6 class="footer-title">به ما بپیوندید</h6>
+            <form class="footer-form">
+             <div class="d-flex">
+              <input type="email" class="form-control" placeholder="Your E-Mail">
+              <button type="submit"><i class="fa fa-envelope" aria-hidden="true"></i></button>
+             </div>
+            </form>
+           </div>
+         </div>
+         
+       </div>
+       <div class="row footer-sec-2">
+          <div class="container">
+            <div class="row d-flex justify-content-between align-items-baseline">
+              <div class="col-12 col-md-6">
+                <p class="copyright">طراحی شده با <strong>♥</strong> توسط مجتبی پارسا</p>
+              </div>
+              
+              <div class="col-12 col-md-6">
+                <ul class="social-links text-left">
+                  <li class="social-link"><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                  <li class="social-link"><a href="#"><i class="fab fa-facebook-square" aria-hidden="true"></i></a></li>
+                  <li class="social-link"><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                  <li class="social-link"><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+      </div>
+
+     </footer>
+     <!-- End Footer Section -->
+
+     <!-- SCROLL TO TOP -->
+     <a href="#" id="top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+
+
+    <!-- Start Script Section -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="assets/Js/all.min.js"></script>
+    <script src="assets/Js/bootstrap.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/Js/owl.carousel.min.js"></script>
+    <script src="assets/Js/script.js"></script>
+  </body>
+</html>

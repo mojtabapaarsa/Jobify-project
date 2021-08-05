@@ -1,0 +1,135 @@
+.job-list-container{
+    padding: 50px 0;
+    box-sizing: border-box;
+    .job-filter{
+        width: 100%;
+        background-color: #F5F7FC;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+        .job-filter-item{
+            padding: 20px 0;
+            .job-filter-item-title{
+                font-size: 18px;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+            
+            .job-filter-form-check{
+                margin-bottom: 15px;
+
+                .job-filter-form-check-input{
+                    padding: 5px;
+                    margin-left: 30px;
+                    position: absolute;
+                    height: 20px;
+                    width: 20px;
+                    border-color: transparent !important;
+                    
+                }
+                label{
+                    color: #696969;
+                    margin-right: 6px;
+                    margin-top: 3px;
+                    font-size: 15px;
+                }
+            }
+            .test-radio{
+                padding: 10px;
+                border: none;
+            }
+
+            
+        }
+    }
+
+    .job-items{
+        .job-item {
+            display: flex;
+            padding: 20px 25px;
+            margin: 0 0 20px;
+            border: 1px solid #ECEDF2;
+            border-radius: 10px;
+            position: relative;
+            transition: all .3s linear;
+            .job-logo {
+                width: 50px;
+                height: 50px;
+                margin-left: 15px;
+    
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+    
+            .job-content {
+    
+                .job-title {
+                    text-align: right;
+                    a {
+                        &:hover {
+                            color: $main-color;
+                        }
+                    }
+    
+                    span {
+    
+                        font-size: 13px;
+                        font-weight: 500;
+                        color: $green-color;
+                        padding: 1px 8px;
+                        border-radius: 17px;
+                        margin-right: 10px;
+                    }
+                }
+    
+                .save-job {
+                    position: absolute;
+                    left: 20px;
+                    top: 19px;
+                    width: 30px;
+                    height: 30px;
+                    background-color: transparent;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #696969;
+                    transition: all .3s ease-in;
+                }
+    
+                .job-details {
+                    text-align: right;
+                    margin: 11px 0;
+    
+                    span {
+                        font-size: 13px;
+                        color: #696969;
+                        margin-left: 20px;
+    
+                        &:hover{
+                            color: #535353;  
+                        }
+                        svg {
+                            margin-left: 3px;
+                            vertical-align: -3px;
+                        }
+                    }
+                }
+            }
+    
+            &:hover{
+                box-shadow: 0px 6px 15px 0 rgba(64, 79, 104, 0.062);
+            }
+               &:hover .save-job{
+                        color: #696969;
+                        background-color:#ecedf1;
+                        cursor: pointer;
+                     
+                }
+            
+        }
+    }
+}
+
