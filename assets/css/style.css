@@ -52,6 +52,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   position: fixed;
   z-index: 99999;
   top: 0;
@@ -180,6 +184,202 @@
   color: #ECEDF2;
 }
 
+.back-side-menu {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 85858854;
+}
+
+.side-menu {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  background-color: #202125;
+  z-index: 85858855;
+  top: 0;
+  right: -250px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.side-menu .side-menu-header {
+  background-color: #fff;
+  padding: 0;
+  width: 100%;
+  height: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.side-menu .side-menu-header img {
+  width: 70%;
+  height: auto;
+}
+
+.side-menu .side-nav-content {
+  padding: 20px;
+}
+
+.side-menu .side-nav-content .side-nav-link {
+  color: #979797;
+  -webkit-transition: color .2s ease-in;
+  transition: color .2s ease-in;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.side-menu .side-nav-content .side-nav-link:hover {
+  color: #fff;
+}
+
+.side-menu .side-nav-content .side-nav-link:first-child {
+  color: gold;
+}
+
+.side-menu .side-nav-content .side-menu-social {
+  margin-top: 25px;
+}
+
+.side-menu .side-nav-content .side-menu-social .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.side-menu .side-nav-content .side-menu-social .social-links .social-link {
+  color: #fff;
+  padding: 10px;
+}
+
+.side-menu .side-nav-content .side-menu-social .social-links .social-link a {
+  color: #c2c2c2;
+  font-size: 20px;
+}
+
+.side-menu .side-nav-content .side-menu-social .social-links .social-link a:hover {
+  color: #fff;
+}
+
+.sign-in-modal .sign-in-modal-content {
+  padding: 20px;
+}
+
+.sign-in-modal .sign-in-modal-content .sign-in-modal-header {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sign-in-modal .sign-in-modal-content .sign-in-modal-header span {
+  font-weight: 400;
+}
+
+.sign-in-modal .sign-in-modal-content .sign-in-modal-header .modal-title {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.sign-in-modal .sign-in-modal-content .sign-in-modal-body .modal-form label {
+  font-size: 14px;
+  color: #202124;
+  font-weight: 500;
+}
+
+.sign-in-modal .sign-in-modal-content .sign-in-modal-body .modal-form input {
+  border: 1px solid transparent;
+  padding: 27px 20px;
+  background-color: #F0F5F7;
+  border-radius: 8px;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-bottom: 20px;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.sign-in-modal .sign-in-modal-content .sign-in-modal-body .modal-form input::-webkit-input-placeholder {
+  text-align: right;
+  font-size: 14px;
+}
+
+.sign-in-modal .sign-in-modal-content .sign-in-modal-body .modal-form input:-ms-input-placeholder {
+  text-align: right;
+  font-size: 14px;
+}
+
+.sign-in-modal .sign-in-modal-content .sign-in-modal-body .modal-form input::-ms-input-placeholder {
+  text-align: right;
+  font-size: 14px;
+}
+
+.sign-in-modal .sign-in-modal-content .sign-in-modal-body .modal-form input::placeholder {
+  text-align: right;
+  font-size: 14px;
+}
+
+.sign-in-modal .sign-in-modal-content .sign-in-modal-body .modal-form input:focus {
+  background-color: #fff;
+  border-color: #1967D2;
+}
+
+.sign-in-modal .sign-in-modal-content .sign-in-modal-body .modal-form .sign-in-modal-btn {
+  background-color: #1967D2;
+  height: 50px;
+  border-radius: 8px;
+  margin-top: 30px;
+  border: 1px solid transparent;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.sign-in-modal .sign-in-modal-content .sign-in-modal-body .modal-form .sign-in-modal-btn:hover {
+  background-color: #fff;
+  border: 1px solid #1967D2;
+  color: #1967D2;
+}
+
+.sign-in-modal .sign-in-modal-content .sign-in-modal-body .modal-form .ask-register {
+  text-align: center;
+  margin: 20px auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sign-in-modal .sign-in-modal-content .sign-in-modal-body .modal-form .ask-register strong {
+  color: #1967D2;
+  font-weight: 500;
+}
+
 @media (min-width: 1200px) {
   .container,
   .container-lg,
@@ -217,6 +417,9 @@
   .header-content p {
     font-size: 14px;
     color: rgba(255, 255, 255, 0.801);
+  }
+  .header-content .form-border-left {
+    border: none !important;
   }
 }
 
@@ -1087,5 +1290,40 @@ body {
 .section-title span {
   color: #77837f;
   font-size: 14px;
+}
+
+#top {
+  position: fixed;
+  bottom: -60px;
+  right: 20px;
+  background-color: #1967D2;
+  -webkit-box-shadow: 0 1px 10px 0 rgba(25, 103, 210, 0.4);
+          box-shadow: 0 1px 10px 0 rgba(25, 103, 210, 0.4);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 20px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#tophover {
+  background-color: #be1313;
+}
+
+button {
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 /*# sourceMappingURL=style.css.map */

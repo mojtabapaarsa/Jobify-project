@@ -60,9 +60,11 @@
                     <button class="btn add-job-btn" type="button">
                       درخواست کار
                     </button>
-                    <button class="btn btn-outline-light mr-2" type="button">
+                    <button class="btn btn-outline-light mr-2" type="button" data-toggle="modal" data-target="#signin-modal">
                       ورود / عضویت
                     </button>
+
+                    
                   </form>
                 </nav>
               </div>
@@ -70,11 +72,56 @@
           </div>
           <!-- End Navbar  -->
 
+
+          <!-- ----- Signin Modal -->
+
+          <!-- Button trigger modal -->
+ 
+
+<!-- Modal -->
+<div class="modal sign-in-modal fade" id="signin-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content sign-in-modal-content">
+      <div class="modal-header sign-in-modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">ورود به جابیفای</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body sign-in-modal-body">
+        
+        <!-- SIGN IN FORM -->
+        <form class="modal-form">
+          <div class="form-group">
+            <label for="modal-sign-in-email">نام کاربری یا ایمیل</label>
+            <input type="email" class="form-control" placeholder="نام کاربری یا ایمیل" id="modal-sign-in-email" aria-describedby="emailHelp">
+          </div>
+          <div class="form-group">
+            <label for="modal-sign-in-password">رمز عبور</label>
+            <input type="password" class="form-control" placeholder="رمز عبور" id="modal-sign-in-password">
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="modal-sign-in-check">
+            <label class="form-check-label" for="modal-sign-in-check">من را به خاطر بسپار</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block sign-in-modal-btn">وورد به حساب</button>
+          <a href="#" class="ask-register">عضو نیستی؟ <strong>ایجاد حساب کاربری</strong></a>
+        </form>
+
+        <!-- SIGN IN FORM ENd -->
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+          <!-- ----- Signin Modal ENd -->
+
           <!-- MobileNavbar -->
           <nav class="navbar mobile-nav">
             <div>
-              <a href="#"><i class="fas fa-bars"></i></a>
-              <a href="#" class="mr-2"><i class="far fa-user"></i></a>
+              <a href="#" class="mr-2" type="button" data-toggle="modal" data-target="#signin-modal"><i class="far fa-user"></i></a>
+              <a href="#" class="sidebar-icon"><i class="fas fa-bars"></i></a>
             </div>
 
             <a href="#"
@@ -206,6 +253,45 @@
       </div>
     </div>
     <!-- ----------------- End Header Section ------------------ -->
+
+    <!------------------ Side Menu Section ----------------- -->
+    <div class="side-menu">
+      <div class="side-menu-header">
+        <img src="assets/images/logo.svg" alt="">
+      </div>
+      
+      <div class="side-nav-content">
+        <div class="navbar-nav">
+          <a class="nav-link side-nav-link active" href="#"
+            >صفحه نخست
+          </a>
+          <a class="nav-link side-nav-link" href="#"
+            >جستجوی شغل</a
+          >
+          <a class="nav-link side-nav-link" href="#"
+            >کارفرما ها</a
+          >
+          <a class="nav-link side-nav-link" href="#">بلاگ</a>
+          <a class="nav-link side-nav-link" href="#">درباره ما</a>
+          <a class="nav-link side-nav-link" href="#"
+            >ارتباط با ما</a
+          >
+        </div>
+        <button class="btn btn-primary btn-block mt-3" type="button">ورود / عضویت</button>
+
+        <div class="side-menu-social">
+          <ul class="social-links text-center">
+            <li class="social-link"><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+            <li class="social-link"><a href="#"><i class="fab fa-facebook-square" aria-hidden="true"></i></a></li>
+            <li class="social-link"><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+            <li class="social-link"><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+
 
     <!----------------  Start Job Lists ----------------------->
     <div class="container text-center">
@@ -1390,6 +1476,10 @@
 
      </footer>
      <!-- End Footer Section -->
+
+     <!-- SCROLL TO TOP -->
+     <a href="#" id="top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+
 
     <!-- Start Script Section -->
     <script
