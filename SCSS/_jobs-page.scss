@@ -133,3 +133,29 @@
     }
 }
 
+.paginations{
+    margin: 30px auto 0;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .pagination{
+        margin: 0 auto;
+
+        li{
+            padding: 0 10px;
+            border-radius: 50% !important;
+            border: none;
+
+           .page-link{
+               padding: 10px 20px;
+               width: 40px;
+               height: 40px;
+            display: flex;
+            justify-content: center;
+               border-radius: 50%;
+
+           }
+        }
+    }
+}

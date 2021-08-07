@@ -1525,6 +1525,41 @@ footer .footer-sec-2 .social-links .social-link a {
   cursor: pointer;
 }
 
+.paginations {
+  margin: 30px auto 0;
+  text-align: center;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.paginations .pagination {
+  margin: 0 auto;
+}
+
+.paginations .pagination li {
+  padding: 0 10px;
+  border-radius: 50% !important;
+  border: none;
+}
+
+.paginations .pagination li .page-link {
+  padding: 10px 20px;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+}
+
 @font-face {
   font-family: IRANSans;
   font-style: normal;
@@ -1642,5 +1677,21 @@ button {
   outline: none !important;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
+}
+
+.outline-0 {
+  outline: none !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.outline-0:hover, .outline-0:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.border-r8 {
+  border-radius: 8px;
 }
 /*# sourceMappingURL=style.css.map */

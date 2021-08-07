@@ -135,3 +135,16 @@ body{
 	  outline: none !important;
 	  box-shadow: none !important;
   }
+
+  .outline-0{
+	  outline: none !important;
+	  box-shadow: none;
+
+	  &:hover , &:focus{
+		outline: none;
+		box-shadow: none;
+	  }
+  }
+  .border-r8{
+	  border-radius: 8px;
+  }
