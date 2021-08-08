@@ -393,10 +393,11 @@
    
 }
 
-.form-search-container{
+.form-search-container , .form-info-container{
     width: 100%;
     height: 300px;
     background: url('../images/form-serch-bg.jpg');
+    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -476,6 +477,114 @@
 
 }
 
+.form-info-container{
+    margin-top: 30px;
+    padding: 105px 0;
+    height: 277px;
+    .job-item-info{
+        display: flex;
+
+        .job-info-logo{
+            width: 100px;
+            height: auto;
+            margin-left: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+
+            img{
+                width: 100%;
+                border-radius: 8px;
+            }
+        }
+        .job-info-content{
+
+            .job-info-title{
+                margin: 0 0 13px;
+                a{
+                    font-size: 22px;
+                }
+                span{
+                    color: $green-color;
+                    margin-right: 20px;
+                }
+            }
+
+            .job-info-details{
+                color: #696969;
+                span{
+                    margin-left: 18px;
+
+                    &:hover{
+                        color: #4d4b4b;
+                    }
+                }
+
+                .job-info-pills{
+                    margin-top: 13px;
+                    p{
+                       font-size: 14px;
+                        padding: 2px 20px;
+                        border-radius: 50px;
+                        margin-left: 18px;
+
+                        &:first-child{
+                            background-color:rgba(25, 103, 210, 0.15);
+                            color: $main-color;
+                        }
+                        &:nth-child(2){
+                            background-color:rgba(249, 171, 0, 0.15);
+                            color: #F9AB00;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .job-item-left{
+         margin-top: 30px;
+        text-align: left;
+        margin-right: auto;
+        display: flex;
+        justify-content: flex-end;
+
+        .send-req-btn{
+            background-color: $main-color;
+            color: #fff;
+            padding: 12px 30px;
+            border: 1px solid transparent;
+            border-radius: 8px;
+
+            &:hover{
+                border-color: $main-color;
+                color: $main-color;
+                background-color: transparent;
+            }
+        }
+        .job-item-save-job{
+            width: 50px;
+            height: 50px;
+            background-color: $main-color-04;
+            color: $main-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            margin-right: 10px;
+            transition: all .3s linear;
+             svg{
+                font-size: 19px;
+                 
+            }
+
+            &:hover{
+               background-color: $main-color;
+               color: #fff; 
+
+            }
+        }
+    }
+}
 @media (min-width: 1200px) {
 
     .container,
@@ -559,5 +668,51 @@
     }
     .form-border-left{
         border: none !important;
+    }
+
+    .form-info-container{
+        height: 400px;
+        padding:40px 20px;
+        
+        .job-item-info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .job-info-content{
+                text-align: center;
+                margin-top: 20px;
+
+                .job-info-logo{
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .job-info-title{
+                    a{
+                        font-size: 18px;
+                        text-align: center;
+                    }
+                }
+                .job-info-details{
+                    margin-top: 20px;
+                    span{
+                        font-size: 14px;
+                    }
+
+                    .job-info-pills{
+                        text-align: center;
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+        .job-item-left{
+            justify-content: center;
+        }
     }
 }
