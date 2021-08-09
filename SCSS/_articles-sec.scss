@@ -213,6 +213,89 @@
     }
 
 }
+.article-details{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+    span , a{
+        margin-left: 20px;
+        color: #696969;
+    }
+}
+
+.blog-container{
+    padding: 0;
+    overflow: hidden;
+     
+    margin-bottom: 50px;
+    
+   .article-image{
+       img{
+        background-position: center;
+        background-size: cover;
+        background-origin: border-box;
+        max-width: 100%;
+        height: auto;
+       }
+      
+   } 
+
+   .blog-texts-container{
+       margin: 40px auto;
+
+       .blog-text-title{
+           margin:20px 0 ;
+
+           h5{
+
+           }
+           
+       }
+       .blog-text{
+        p{
+            color: #696969;
+            line-height: 2.2;
+            text-align: justify;
+        }
+       }
+
+       .share-article{
+           margin-top: 30px;
+           border-top: 1px solid #efefef ;
+           border-bottom: 1px solid #efefef ;
+           padding: 10px 0;
+           display: flex;
+           justify-content: space-between;
+        align-items: baseline;
+
+           h6{
+               margin-left: 10px;
+               font-weight: 500;
+               color: $main-color;
+           }
+
+           .share-social{
+            margin-top: 5px;
+               a{
+                   background-color: $main-color-02;
+                   color: #fff;
+                   padding: 3px 20px;
+                   border-radius: 8px;
+                    
+                   &:hover{
+                       background-color: $main-color;
+                   }
+               }
+           }
+       }
+   }
+}
 @media screen and (max-width:568px) {
      .article-header{
          height: 200px !important;
@@ -220,4 +303,12 @@
          justify-content: center;
          align-items: center;
      }
+     .blog-text{
+         padding: 20px;
+        p{
+            color: #696969;
+            line-height: 2.2;
+            text-align: justify;
+        }
+       }
 }

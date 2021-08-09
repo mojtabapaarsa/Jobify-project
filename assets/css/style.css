@@ -1559,6 +1559,95 @@
   width: 100%;
 }
 
+.article-details {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.article-details img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.article-details span, .article-details a {
+  margin-left: 20px;
+  color: #696969;
+}
+
+.blog-container {
+  padding: 0;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.blog-container .article-image img {
+  background-position: center;
+  background-size: cover;
+  background-origin: border-box;
+  max-width: 100%;
+  height: auto;
+}
+
+.blog-container .blog-texts-container {
+  margin: 40px auto;
+}
+
+.blog-container .blog-texts-container .blog-text-title {
+  margin: 20px 0;
+}
+
+.blog-container .blog-texts-container .blog-text p {
+  color: #696969;
+  line-height: 2.2;
+  text-align: justify;
+}
+
+.blog-container .blog-texts-container .share-article {
+  margin-top: 30px;
+  border-top: 1px solid #efefef;
+  border-bottom: 1px solid #efefef;
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.blog-container .blog-texts-container .share-article h6 {
+  margin-left: 10px;
+  font-weight: 500;
+  color: #1967D2;
+}
+
+.blog-container .blog-texts-container .share-article .share-social {
+  margin-top: 5px;
+}
+
+.blog-container .blog-texts-container .share-article .share-social a {
+  background-color: #1966d291;
+  color: #fff;
+  padding: 3px 20px;
+  border-radius: 8px;
+}
+
+.blog-container .blog-texts-container .share-article .share-social a:hover {
+  background-color: #1967D2;
+}
+
 @media screen and (max-width: 568px) {
   .article-header {
     height: 200px !important;
@@ -1571,6 +1660,14 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .blog-text {
+    padding: 20px;
+  }
+  .blog-text p {
+    color: #696969;
+    line-height: 2.2;
+    text-align: justify;
   }
 }
 
