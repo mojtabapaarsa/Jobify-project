@@ -1559,7 +1559,7 @@
   width: 100%;
 }
 
-.article-details {
+.article-header-details {
   margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1572,13 +1572,13 @@
           align-items: center;
 }
 
-.article-details img {
+.article-header-details img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
 }
 
-.article-details span, .article-details a {
+.article-header-details span, .article-header-details a {
   margin-left: 20px;
   color: #696969;
 }
