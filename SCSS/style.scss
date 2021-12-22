@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'header';
+@import 'loading';
 @import 'joblists';
 @import 'cv-sec';
 @import 'job-categories';
@@ -89,7 +90,10 @@ ul,li{
 }
 
 // -------------------
+ 
+// ----------------
 body{
+	
     font-family: 'IRANSans' , 'tahoma' ;
     font-weight: normal;
      padding: 0;
